@@ -1,5 +1,4 @@
-# .github/workflows/**main.yml**
-name: Django-app workflow
+name: yamdb_workflow
 
 on: [push]
 
@@ -55,6 +54,7 @@ jobs:
           # Пуш образа в Docker Hub 
           uses: docker/build-push-action@v2 
           with:
+            context: api_yamdb
             push: true
             tags: korefantvoy/api_yamdb:latest
   deploy:
