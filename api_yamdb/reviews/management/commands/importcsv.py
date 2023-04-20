@@ -4,9 +4,8 @@ import os
 from django.conf import settings
 from django.core.management.base import BaseCommand
 
-from reviews.models import (Category, Comment, Genre, Review,
-                            Title, User, GenreTitle)
-
+from reviews.models import (Category, Comment, Genre, GenreTitle, Review,
+                            Title, User)
 
 DATA = {
     User: 'users.csv',

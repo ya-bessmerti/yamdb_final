@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, generics, status, viewsets
 from rest_framework.decorators import action
-from rest_framework.pagination import (LimitOffsetPagination)
+from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -13,25 +13,16 @@ from rest_framework_simplejwt.tokens import RefreshToken
 
 from reviews.models import Category, Genre, Review, Title
 from users.models import User
+
 from .confirmation import send_email
 from .filters import TitleFilter
 from .mixins import CLDViewSet
-from .permissions import (
-    AuthorAndStaffOrReadOnly,
-    IsAdmin,
-    IsAdminOrReadOnly
-)
-from .serializers import (
-    CategorySerializer,
-    CommentSerializer,
-    GenreSerializer,
-    ObtainTokenSerializer,
-    ReviewSerializer,
-    SignUpSerializer,
-    TitleReadSerializer,
-    TitleWriteSerializer,
-    UserSerializer,
-)
+from .permissions import AuthorAndStaffOrReadOnly, IsAdmin, IsAdminOrReadOnly
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, ObtainTokenSerializer,
+                          ReviewSerializer, SignUpSerializer,
+                          TitleReadSerializer, TitleWriteSerializer,
+                          UserSerializer)
 
 
 class AuthTokenView(APIView):

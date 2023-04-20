@@ -1,11 +1,8 @@
 from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
-from drf_spectacular.views import (
-    SpectacularAPIView,
-    SpectacularSwaggerView,
-    SpectacularRedocView
-)
+from drf_spectacular.views import (SpectacularAPIView, SpectacularRedocView,
+                                   SpectacularSwaggerView)
 
 urlpatterns = [
     path('api/', include('api.urls'), name='api'),
