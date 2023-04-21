@@ -1,7 +1,7 @@
 import re
 
 from django.core.exceptions import ValidationError
-from django.core.validators import validate_email
+
 
 RESTRICTED_USERNAME = 'me'
 PATTERN = re.compile(r'[\w.@+-]+')
@@ -21,13 +21,3 @@ def validate_username(username):
             'в качестве username запрещено.'
         )
     return username
-
-
-def validate_email(email):
-    try:
-        validate_email(email)
-    except Exception:
-        raise ValidationError(
-            'Введен некорректный почтовый ящик'
-        )
-    return email
