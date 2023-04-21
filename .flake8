@@ -1,0 +1,3 @@
+[flake8]
+per-file-ignores =
+    api_yamdb/users/validators.py: F811
