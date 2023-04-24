@@ -1,5 +1,10 @@
 # yamdb_final
 
+![workflow](https://github.com/ya-bessmerti/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
+## Адрес сайта
+http://158.160.18.147/redoc/
+
 Проект Yamdb собирает отзывы (Review) пользователей на произведения (Titles).
 Работы разделены на категории: «Книги», «Фильмы», «Музыка».
 Сами произведения в Yamdb не хранятся; здесь нельзя смотреть кино или слушать музыку.
@@ -7,11 +12,6 @@
 Произведению может быть присвоен жанр (Жанр) из списка предустановленных (например, «Сказка», «Рок» или «Артхаус»).
 Новые жанры может создавать только администратор.
 Благодарные или возмущенные пользователи оставляют текстовые отзывы (Review) на работы и оценивают в диапазоне от одного до десяти; рейтинг формируется из оценок пользователей.
-
-![workflow](https://github.com/ya-bessmerti/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
-
-![Logo](https://cdn-irec.r-99.com/sites/default/files/product-images/399872/EOXOqQkXnjTMTRnIpMUSvQ.jpg)
-
 
 
 ## Настройка и запуск сервера в контейнере:
