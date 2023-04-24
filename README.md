@@ -3,9 +3,8 @@
 ![workflow](https://github.com/ya-bessmerti/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 
-
 ## Адрес сайта
-http://158.160.18.147/redoc/
+http://http://158.160.29.145/api/v1/
 
 Проект Yamdb собирает отзывы (Review) пользователей на произведения (Titles).
 Работы разделены на категории: «Книги», «Фильмы», «Музыка».
