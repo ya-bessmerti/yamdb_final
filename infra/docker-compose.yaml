@@ -16,8 +16,11 @@ services:
       image: korefantvoy/api_yamdb:latest
       restart: always
       volumes:
+        - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
         - static_value:/app/static/
         - media_value:/app/media/
+        - ./redoc.yaml:/var/html/static/redoc.yaml
+        - ./redoc.html:/var/html/redoc/redoc.html
       depends_on:
         - db
       env_file:
